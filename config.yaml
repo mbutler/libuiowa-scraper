@@ -1,0 +1,13 @@
+# Final test configuration - depth 3 before full crawl
+depth: 3  # Test deeper crawling
+delay: 1.0  # 1 second delay between requests
+obey_robots: true
+strict_domain: true  # Only follow URLs ending with lib.uiowa.edu
+
+# Target only specific subdomains/sections
+domains:
+  - lib.uiowa.edu  # University of Iowa Libraries
+
+# Start with just the main library homepage
+start_urls:
+  - https://www.lib.uiowa.edu
