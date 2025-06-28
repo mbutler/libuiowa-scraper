@@ -1,13 +1,22 @@
-# Final test configuration - depth 3 before full crawl
-depth: 3  # Test deeper crawling
+# Full crawl configuration with multiple seed URLs
+# depth: 3  # Comment out for unlimited depth
 delay: 1.0  # 1 second delay between requests
 obey_robots: true
 strict_domain: true  # Only follow URLs ending with lib.uiowa.edu
 
-# Target only specific subdomains/sections
+# Target domains
 domains:
-  - lib.uiowa.edu  # University of Iowa Libraries
+  - lib.uiowa.edu
 
-# Start with just the main library homepage
+# Multiple seed URLs to ensure comprehensive coverage
 start_urls:
   - https://www.lib.uiowa.edu
+  - https://blog.lib.uiowa.edu
+  - https://guides.lib.uiowa.edu
+  - https://pubs.lib.uiowa.edu
+  - https://aspace.lib.uiowa.edu
+  - https://ask.lib.uiowa.edu
+  - https://diyhistory.lib.uiowa.edu
+  - https://library.law.uiowa.edu
+  - https://scpatron.lib.uiowa.edu
+  - https://digital.lib.uiowa.edu
